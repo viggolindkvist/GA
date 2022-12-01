@@ -7,8 +7,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 // connect to mongodb
 $m = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-echo "Connection to database successfully";
-print_r($m);
+//echo "Connection to database successfully";
+//print_r($m);
 
 
 
@@ -20,9 +20,9 @@ $result = $manager->executeQuery('GymnasieArbete.musicFiles', $query);
 
 foreach ($result as $document) {
     /*    print_r($document->name_audio);
-    echo " "; */
+    echo " "; 
     print_r($document->file_name);
-    echo "<br>";
+    echo "<br>";*/
     $src = "uploads/" . $document->file_name;
     echo "<p class = 'display-name'>$document->name_audio</p>";
     echo "<audio controls muted class='music'>";
