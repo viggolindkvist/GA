@@ -24,7 +24,7 @@
                     echo "<p class = 'error'>*Invalid username or password</p>";
                 }
                 else if($_GET['error'] === "Noaccountfound"){
-                    echo "<p class = 'error'>*Pleas loggin before going to the site</p> ";
+                    echo "<p class = 'error'>*Please loggin before going to the site</p> ";
                 }
             } 
         ?>
